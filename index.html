@@ -6,19 +6,19 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="index.html">
+      <a class="logo" href="#">
         <img src="#" alt="Логотип..." width="138" height="64">
       </a>
       <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
       </nav>
@@ -36,151 +36,86 @@
         </li>
       </ul>
 
-      <button type="button" class="user-button">ХОЧУ СЮДА!</button>
+      <button type="button" class="user-button" id="first-user-button">ХОЧУ СЮДА!</button>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Гостиницы Седоны</h1>
-
+      <h1 class="visually-hidden">Седона</h1>
       <section>
-        <h2 class="visually-hidden">Фильтр</h2>
-        <p class="slogan">Гостиницы Седоны</p>
-        <ul class="breadcrumb">
-            <li><a href="index.html">
-                <img src="#" alt="Главная" width="13" height="15">
-            </a></li>
-            <li>Гостиницы</li>
-        </ul>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Инфраструктура:</legend>
-                <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label>
-                <label><input type="checkbox" name="infrastructure" value="park" checked>Парковка</label>
-                <label><input type="checkbox" name="infrastructure" value="wifi">Wi-fi</label>
-            </fieldset>
-            <fieldset>
-                <legend>Тип жилья:</legend>
-                <label><input type="radio" name="house" value="hotel" checked>Гостиница</label>
-                <label><input type="radio" name="house" value="motel">Мотель</label>
-                <label><input type="radio" name="house" value="apartments">Апартаменты</label>
-            </fieldset>
-            <fieldset>
-                <legend>Стоимость, <span>₽</span></legend>
-                <label>от<input type="text" value="0"></label>
-                <label>до<input type="text" value="900"></label>
-            </fieldset>
-            <button type="submit" class="submit-button">Применить</button>
-            <button type="reset" class="reset-button">Сбросить</button>
-        </form>
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+        <img src="#" alt="Добро пожаловать" width="1200" height="485">
+        <div class="text-block">
+          <p class="slogan"><b>Седона - небольшой городок в Аризоне, <br>заслуживающий большего</b></p>
+          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
       </section>
 
-      <section>
-        <h2 class="visually-hidden">Каталог</h2>
-        <p>Найдено гостиниц:38</p>
-        <select name="sort-order">
-            <option value="cheap-first">Сначала дешёвые</option>
-        </select>
-        <ul class="result-display">
-            <li class="display-item">
-                <button type="button" class="display-button" id="card-button">
-                    <img src="#" alt="Карточки">
-                </button>
-            </li>
-            <li class="display-item">
-                <button type="button" class="display-button" id="slide-button">
-                    <img src="#" alt="Слайды">
-                </button>
-            </li>
-            <li class="display-item">
-                <button type="button" class="display-button" id="list-button">
-                    <img src="#" alt="Список">
-                </button>
-            </li>
+      <section class="section-main">
+        <h2 class="visually-hidden">Приемущества</h2>
+        <img src="#" alt="Фото городка" width="800" height="385">
+        <ul class="advantage-list">
+          <li class="advantage-block third-block">
+            <p class="slogan"><b>Настоящий <br>городок</b></p>
+            <p>Седона - не аттракцион для <br>туристов, там течёт своя <br>жизнь</p>
+          </li>
+          <li class="advantage-block first-block">
+            <p class="slogan"><b>Небольшая <br>площадь</b></p>
+            <p>Все достопримечательности <br>находятся очень близко</p>
+          </li>
+          <li class="advantage-block second-block">
+            <p class="slogan"><b>Красивая <br>дорога</b></p>
+            <p>Ехать в Седону из Лас-Вегаса <br>совсем не скучно!</p>
+          </li>
+          <li class="advantage-block first-block">
+            <p class="slogan"><b>Мало <br>туристов</b></p>
+            <p>Большинство едет в Гранд <br>Каньон и толпится там</p>
+          </li>
+          <li class="advantage-block third-block">
+            <p class="slogan"><b>Там есть <br>мост дьявола</b></p>
+            <p>Да, по нему можно пройти! <br>Если вы осмелитесь, <br>разумеется</p>
+          </li>
         </ul>
+        <img src="#" alt="Мост дьявола" width="800" height="385">
+      </section>
 
-        <ul class="search-results">
-            <li class="search-item">
-                <img src="#" alt="Пейзаж места">
-                <p><b>Amara resort & spa</b></p>
-                <p>Гостиница</p>
-                <p>От 4000₽</p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="Amara-button">В избранное</button>
-                <p><meter class="star-meter" value="4" max="5"></meter></p>
-                <p><meter class="digit-rating" value="8.5" max="10">Рейтинг:</meter></p>
-            </li>
-            <li class="search-item">
-                <img src="#" alt="Пейзаж места">
-                <p><b>Villas at Poco Diablo</b></p>
-                <p>Гостиница</p>
-                <p>От 5000₽</p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="Villas-button">В избранное</button>
-                <p><meter class="star-meter" value="4" max="5"></meter></p>
-                <p><meter class="digit-rating" value="9.2" max="10">Рейтинг:</meter></p>
-            </li>
-            <li class="search-item">
-                <img src="#" alt="Пейзаж места">
-                <p><b>Desert Quail Inn</b></p>
-                <p>Гостиница</p>
-                <p>От 2500₽</p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="Desert-button">В избранное</button>
-                <p><meter class="star-meter" value="3" max="5"></meter></p>
-                <p><meter class="digit-rating" value="6.9" max="10">Рейтинг:</meter></p>
-            </li>
-            <li class="search-item">
-                <img src="#" alt="Пейзаж места">
-                <p><b>GreenTree Inn</b></p>
-                <p>Гостиница</p>
-                <p>От 1500₽</p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="GreenTree-button">В избранное</button>
-                <p><meter class="star-meter" value="2" max="5"></meter></p>
-                <p><meter class="digit-rating" value="5.0" max="10">Рейтинг:</meter></p>
-            </li>
+      <section class="section-main">
+        <h2 class="visually-hidden">Услуги</h2>
+        <header class="service-header">
+          <p class="slogan"><b>Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</b></p>
+          <p>Опытный персонал и качественное обслуживание!</p>
+        </header>
+        <ul class="service-list">
+          <li class="service-block second-block">
+            <img src="#" alt="Жильё" width="75" height="72">
+            <p><b>Жильё</b>Рекоммендуем пожить <br>в настоящем мотеле, <br>всё как в кино!</p>
+            <p></p>
+          </li>
+          <li class="service-block forth-block">
+            <img src="#" alt="Еда" width="75" height="72">
+            <p><b>Еда</b></p>
+            <p>Всегда заказывайте <br>топовый фирменный бургер, <br>вы не разочаруетесь!</p>
+          </li>
+          <li class="service-block second-block">
+            <img src="#" alt="Сувениры" width="75" height="72">
+            <p><b>Сувениры</b></p>
+            <p>Не только китайского, <br>но и настоящего местного <br>производства!</p>
+          </li>
         </ul>
+      </section>
 
-        <ul class="page-slides">
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="one-button">1</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="two-button">2</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="three-button">3</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="four-button">4</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="five-button">5</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="six-button">6</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="seven-button">7</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="eight-button">8</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="nine-button">9</button>
-            </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="ten-button">10</button>
-            </li>
-        </ul>
+      <section class="section-main">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="slogan"><b>Заинтересовались?</b></p>
+        <p>Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостинец в Седоне</p>
+        <button type="button" class="user-button" id="second-user-button">Поиск гостиницы в Седоне</button>
       </section>
 
       <article class="page-article">
         <h2 class="visually-hidden">Подписаться на рассылку</h2>
         <p class="slogan"><b>Подпишитесь на рассылку</b></p>
         <p>Только честная информация и никакого спама, <br>честное бойскаутское!</p>
-        <form action="#" method="post">
-          <input type="text" placeholder="Ваш e-mail" required>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" placeholder="Ваш e-mail" required>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </article>
@@ -204,7 +139,9 @@
           </a>
         </li>
       </ul>
-      <img src="#" alt="+7(812)812-12-12" width="720" height="50">
+      <address>
+        <a href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
+      </address>
       <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="#" alt="Логотип htmlacademy" width="115" height="33">
       </a>

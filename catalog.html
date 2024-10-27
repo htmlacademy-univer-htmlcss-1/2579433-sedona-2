@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Каталог гостиниц - Седона</title>
   </head>
   <body>
     <header class="page-header">
@@ -51,12 +51,12 @@
             </a></li>
             <li>Гостиницы</li>
         </ul>
-        <form action="#" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset>
                 <legend>Инфраструктура:</legend>
-                <label><input type="checkbox" name="infrastructure" value="pool" checked>Бассейн</label>
-                <label><input type="checkbox" name="infrastructure" value="park" checked>Парковка</label>
-                <label><input type="checkbox" name="infrastructure" value="wifi">Wi-fi</label>
+                <label><input type="checkbox" name="pool" value="pool" checked>Бассейн</label>
+                <label><input type="checkbox" name="park" value="park" checked>Парковка</label>
+                <label><input type="checkbox" name="wifi" value="wifi">Wi-fi</label>
             </fieldset>
             <fieldset>
                 <legend>Тип жилья:</legend>
@@ -66,8 +66,10 @@
             </fieldset>
             <fieldset>
                 <legend>Стоимость, <span>₽</span></legend>
-                <label>от<input type="text" value="0"></label>
-                <label>до<input type="text" value="900"></label>
+                <label for="from-field">от</label>
+                <input type="text" id="from-field" name="from-field" value="0">
+                <label for="to-field">до</label>
+                <input type="text" id="to-field" name="to-field" value="900">
             </fieldset>
             <button type="submit" class="submit-button">Применить</button>
             <button type="reset" class="reset-button">Сбросить</button>
@@ -106,8 +108,8 @@
                 <p>От 4000₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
                 <button type="button" class="chosen-button" id="Amara-button">В избранное</button>
-                <p><meter class="star-meter" value="4" max="5"></meter></p>
-                <p><meter class="digit-rating" value="8.5" max="10">Рейтинг:</meter></p>
+                <p class="star-meter">★★★★</p>
+                <p class="digit-rating">Рейтинг:8,5</p>
             </li>
             <li class="search-item">
                 <img src="#" alt="Пейзаж места">
@@ -116,8 +118,8 @@
                 <p>От 5000₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
                 <button type="button" class="chosen-button" id="Villas-button">В избранное</button>
-                <p><meter class="star-meter" value="4" max="5"></meter></p>
-                <p><meter class="digit-rating" value="9.2" max="10">Рейтинг:</meter></p>
+                <p class="star-meter">★★★★</p>
+                <p class="digit-rating">Рейтинг:9,2</p>
             </li>
             <li class="search-item">
                 <img src="#" alt="Пейзаж места">
@@ -126,8 +128,8 @@
                 <p>От 2500₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
                 <button type="button" class="chosen-button" id="Desert-button">В избранное</button>
-                <p><meter class="star-meter" value="3" max="5"></meter></p>
-                <p><meter class="digit-rating" value="6.9" max="10">Рейтинг:</meter></p>
+                <p class="star-meter">★★★</p>
+                <p class="digit-rating">Рейтинг:6,9</p>
             </li>
             <li class="search-item">
                 <img src="#" alt="Пейзаж места">
@@ -136,41 +138,41 @@
                 <p>От 1500₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
                 <button type="button" class="chosen-button" id="GreenTree-button">В избранное</button>
-                <p><meter class="star-meter" value="2" max="5"></meter></p>
-                <p><meter class="digit-rating" value="5.0" max="10">Рейтинг:</meter></p>
+                <p class="star-meter">★★</p>
+                <p class="digit-rating">Рейтинг:5,0</p>
             </li>
         </ul>
 
-        <ul class="page-slides">
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="one-button">1</button>
+        <ul class="filtered-page">
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">1</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="two-button">2</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">2</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="three-button">3</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">3</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="four-button">4</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">4</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="five-button">5</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">5</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="six-button">6</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">6</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="seven-button">7</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">7</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="eight-button">8</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">8</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="nine-button">9</button>
+            <li class="filtered-page-item">
+                <a class="filtered-page-link" href="#">9</a>
             </li>
-            <li class="page-slides-item">
-                <button type="button" class="page-slides-button" id="ten-button">10</button>
+            <li class="filtered-page-item">
+              <a class="filtered-page-link" href="#">10</a>
             </li>
         </ul>
       </section>
@@ -179,8 +181,8 @@
         <h2 class="visually-hidden">Подписаться на рассылку</h2>
         <p class="slogan"><b>Подпишитесь на рассылку</b></p>
         <p>Только честная информация и никакого спама, <br>честное бойскаутское!</p>
-        <form action="#" method="post">
-          <input type="text" placeholder="Ваш e-mail" required>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" placeholder="Ваш e-mail" required>
           <button type="submit" class="subscribe-button">Подписаться</button>
         </form>
       </article>
@@ -204,7 +206,9 @@
           </a>
         </li>
       </ul>
-      <img src="#" alt="+7(812)812-12-12" width="720" height="50">
+      <address>
+        <a href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
+      </address>
       <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="#" alt="Логотип htmlacademy" width="115" height="33">
       </a>
