@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-univer-htmlcss-1.github.io/2579433-sedona-2/3/">
+</head>
+  <body>
+    <header class="page-header">
+      <a class="logo" href="#">
+        <img src="images/logo.png" alt="Логотип..." width="138" height="64">
+      </a>
+      <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item first-nav-element">
+              <a class="navigation-link">Главная</a>
+            </li>
+            <li class="navigation-item second-nav-element">
+              <a class="navigation-link" href="#">О Седоне</a>
+            </li>
+            <li class="navigation-item third-nav-element">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+      </nav>
+
+      <ul class="user-menu">
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <img src="images/search.svg" alt="Поиск">
+          </a>
+        </li>
+        <li class="user-menu-item">
+          <a class="user-menu-link" href="#">
+            <img src="images/heart.svg" alt="Избранное">
+          </a>
+        </li>
+      </ul>
+
+      <button type="button" class="user-button" id="first-modal-trigger-button">ХОЧУ СЮДА!</button>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона</h1>
+      <section>
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+        <img src="images/main.png" alt="Добро пожаловать" width="1200" height="767">
+      </section>
+
+      <section class="section-main">
+        <h2 class="visually-hidden">Приемущества</h2>
+        <ul class="advantage-list">
+          <li class="advantage-block third-block">
+            <p class="slogan">Настоящий городок</p>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="images/photo-1.jpg" alt="Фото городка" width="800" height="385">
+          </li>
+          <li class="advantage-block first-block">
+            <p class="slogan">Небольшая площадь</p>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="advantage-block second-block">
+            <p class="slogan">Красивая дорога</p>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="advantage-block first-block">
+            <p class="slogan">Мало туристов</p>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+          <li class="advantage-block third-block">
+            <img src="images/photo-2.jpg" alt="Мост дьявола" width="800" height="385">
+            <p class="slogan">Там есть мост дьявола</p>
+            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-main">
+        <h2 class="visually-hidden">Услуги</h2>
+        <header class="service-header">
+          <p class="slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p>Опытный персонал и качественное обслуживание!</p>
+        </header>
+        <ul class="service-list">
+          <li class="service-block second-block">
+            <img src="images/house-icon.svg" alt="Жильё" width="75" height="72">
+            <p class="slogan">Жильё</p>
+            <p>Рекоммендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="service-block forth-block">
+            <img src="images/food-icon.svg" alt="Еда" width="75" height="72">
+            <p class="slogan">Еда</p>
+            <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="service-block second-block">
+            <img src="images/gift-icon.svg" alt="Сувениры" width="75" height="72">
+            <p class="slogan">Сувениры</p>
+            <p>Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-main">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="slogan">Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне</p>
+        <button type="button" class="user-button" id="second-modal-trigger-button">Поиск гостиницы в Седоне</button>
+      </section>
+
+      <article class="page-article">
+        <h2 class="visually-hidden">Подписаться на рассылку</h2>
+        <p class="slogan">Подпишитесь на рассылку</p>
+        <p>Только честная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" placeholder="Ваш e-mail" required>
+          <button type="submit" class="subscribe-button">Подписаться</button>
+        </form>
+      </article>
+    </main>
+
+    <footer class="page-footer">
+      <ul class="link-list">
+        <li class="link-item">
+          <a class="media-link" href="https://vk.com/htmlacademy">
+            <img src="images/social-vk.svg" alt="VK" width="24" height="14">
+          </a>
+        </li>
+        <li class="link-item">
+          <a class="media-link" href="https://t.me/htmlacademy">
+            <img src="images/social-telegram.svg" alt="TG" width="24" height="14">
+          </a>
+        </li>
+        <li class="link-item">
+          <a class="media-link" href="https://www.youtube.com/user/htmlacademyru">
+            <img src="images/social-youtube.svg" alt="YT" width="24" height="14">
+          </a>
+        </li>
+      </ul>
+      <address>
+        <a href="tel:+7(812)812-12-12">+7(812)812-12-12</a>
+      </address>
+      <a class="logo" href="https://htmlacademy.ru/">
+        <img src="images/Logo.svg" alt="Логотип htmlacademy" width="115" height="33">
+      </a>
+    </footer>
+  </body>
+</html>
