@@ -40,10 +40,10 @@
       <button type="button" class="active-button">ХОЧУ СЮДА!</button>
     </header>
 
-    <main class="page-main">
+    <main class="page-catalog">
       <h1 class="visually-hidden">Гостиницы Седоны</h1>
 
-      <section>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
         <p class="slogan">Гостиницы Седоны</p>
         <ul class="breadcrumb">
@@ -74,18 +74,18 @@
                 <label for="from-field">от</label>
                 <input type="text" id="from-field" name="from-field" value="0">
                 <label for="to-field">до</label>
-                <input type="text" id="to-field" name="to-field" value="900">
+                <input type="text" id="to-field" name="to-field" value="9000">
             </fieldset>
-            <button type="submit" class="submit-button">Применить</button>
-            <button type="reset" class="reset-button">Сбросить</button>
+            <button type="submit" class="active-button secondary-button">Применить</button>
+            <button type="reset" class="active-button transparent-button">Сбросить</button>
         </form>
       </section>
 
       <section>
         <h2 class="visually-hidden">Каталог</h2>
-        <p>Найдено гостиниц:38</p>
+        <p class="slogan">Найдено гостиниц:38</p>
         <select name="sort-order">
-            <option value="cheap-first">Сначала дешёвые</option>
+            <option class="list-order" value="cheap-first">Сначала дешёвые</option>
         </select>
         <ul class="result-display">
             <li class="display-item">
@@ -112,7 +112,7 @@
                 <p>Гостиница</p>
                 <p>От 4000₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="Amara-button">В избранное</button>
+                <button type="button" class="active-button secondary-button" id="Amara-button">В избранное</button>
                 <p class="star-meter">★★★★</p>
                 <p class="digit-rating">Рейтинг:8,5</p>
             </li>
@@ -122,7 +122,7 @@
                 <p>Гостиница</p>
                 <p>От 5000₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="Villas-button">В избранное</button>
+                <button type="button" class="active-button chosen-button" id="Villas-button">В избранном</button>
                 <p class="star-meter">★★★★</p>
                 <p class="digit-rating">Рейтинг:9,2</p>
             </li>
@@ -132,7 +132,7 @@
                 <p>Гостиница</p>
                 <p>От 2500₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="Desert-button">В избранное</button>
+                <button type="button" class="active-button secondary-button" id="Desert-button">В избранное</button>
                 <p class="star-meter">★★★</p>
                 <p class="digit-rating">Рейтинг:6,9</p>
             </li>
@@ -142,42 +142,42 @@
                 <p>Гостиница</p>
                 <p>От 1500₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="chosen-button" id="GreenTree-button">В избранное</button>
+                <button type="button" class="active-button secondary-button" id="GreenTree-button">В избранное</button>
                 <p class="star-meter">★★</p>
                 <p class="digit-rating">Рейтинг:5,0</p>
             </li>
         </ul>
 
         <ul class="filtered-page">
-            <li class="filtered-page-item">
-              <a class="filtered-page-link">1</a>
+            <li class="filtered-page-item current-link">
+              <a>1</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">2</a>
+              <a href="#">2</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">3</a>
+              <a href="#">3</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">4</a>
+              <a href="#">4</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">5</a>
+              <a href="#">5</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">6</a>
+              <a href="#">6</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">7</a>
+              <a href="#">7</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">8</a>
+              <a href="#">8</a>
             </li>
             <li class="filtered-page-item">
-                <a class="filtered-page-link" href="#">9</a>
+                <a href="#">9</a>
             </li>
             <li class="filtered-page-item">
-              <a class="filtered-page-link" href="#">10</a>
+              <a href="#">10</a>
             </li>
         </ul>
       </section>
