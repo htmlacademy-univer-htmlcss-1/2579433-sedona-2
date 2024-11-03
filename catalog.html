@@ -2,41 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Каталог гостиниц - Седона</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="logo" href="index.html">
+      <a class="main-logo" href="index.html">
         <img src="images/logo.png" alt="Логотип..." width="138" height="64">
       </a>
       <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О Седоне</a>
+              <a href="#">О Седоне</a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link">Гостиницы</a>
+            <li class="navigation-item current-link">
+              <a>Гостиницы</a>
             </li>
           </ul>
       </nav>
 
       <ul class="user-menu">
         <li class="user-menu-item">
-          <a class="user-menu-link" href="#">
+          <a href="#">
             <img src="images/search.svg" alt="Поиск">
           </a>
         </li>
         <li class="user-menu-item">
-          <a class="user-menu-link" href="#">
+          <a href="#">
             <img src="images/heart.svg" alt="Избранное">
           </a>
         </li>
       </ul>
 
-      <button type="button" class="user-button">ХОЧУ СЮДА!</button>
+      <button type="button" class="active-button">ХОЧУ СЮДА!</button>
     </header>
 
     <main class="page-main">
@@ -107,7 +108,7 @@
         <ul class="search-results">
             <li class="search-item">
                 <img src="images/hotel-1.jpg" alt="Пейзаж места" width="300" height="212">
-                <p><b>Amara resort & spa</b></p>
+                <p class="slogan">Amara resort & spa</p>
                 <p>Гостиница</p>
                 <p>От 4000₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
@@ -117,7 +118,7 @@
             </li>
             <li class="search-item">
                 <img src="images/hotel-2.jpg" alt="Пейзаж места" width="300" height="212">
-                <p><b>Villas at Poco Diablo</b></p>
+                <p class="slogan">Villas at Poco Diablo</p>
                 <p>Гостиница</p>
                 <p>От 5000₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
@@ -127,7 +128,7 @@
             </li>
             <li class="search-item">
                 <img src="images/hotel-3.jpg" alt="Пейзаж места" width="300" height="212">
-                <p><b>Desert Quail Inn</b></p>
+                <p class="slogan">Desert Quail Inn</p>
                 <p>Гостиница</p>
                 <p>От 2500₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
@@ -137,7 +138,7 @@
             </li>
             <li class="search-item">
                 <img src="images/hotel-4.jpg" alt="Пейзаж места" width="300" height="212">
-                <p><b>GreenTree Inn</b></p>
+                <p class="slogan">GreenTree Inn</p>
                 <p>Гостиница</p>
                 <p>От 1500₽</p>
                 <a class="learn-more" href="#">Подробнее</a>
@@ -187,7 +188,7 @@
         <p>Только честная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <input type="email" placeholder="Ваш e-mail" required>
-          <button type="submit" class="subscribe-button">Подписаться</button>
+          <button type="submit" class="active-button secondary-button">Подписаться</button>
         </form>
       </article>
     </main>

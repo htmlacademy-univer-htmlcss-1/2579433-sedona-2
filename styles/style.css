@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color:#333333;
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+
+input {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 12px 20px;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.section-main, .subscribe-window {
+  text-align: center;
+}
+
+.text-block {
+  padding: 69px 69px;
+}
+
+.text-block-one {
+  padding: 64px 64px;
+}
+
+.text-block-two {
+  padding: 96px 304px;
+}
+
+.slogan{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-item .slogan {
+  text-transform: capitalize;
+}
+
+.active-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 8px 50px;
+  background: #756157;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.active-button:hover {
+  background: #615048;
+}
+
+.active-button:focus {
+  background: #615048;
+}
+
+.active-button:active {
+  color: #FFFFFF4D;
+  background: #756157;
+}
+
+.secondary-button {
+  background: #82B3D3;
+}
+
+.secondary-button:hover {
+  background: #68A2CA;
+}
+
+.secondary-button:focus {
+  background: #68A2CA;
+}
+
+.secondary-button:active {
+  background: #82B3D3;
+  color: #FFFFFF4D;
+}
+
+.grid-block {
+  font-size: 18px;
+  line-height: 21px;
+  padding: 103px 85px;
+}
+
+.grid-block.slogan {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.first-block {
+  background-color: #83B3D31F;
+}
+
+.second-block {
+  background-color: #83B3D333;
+}
+
+.third-block, .third-block .slogan {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.page-main article {
+  color: #FFFFFF;
+  background-color: rgba(130, 179, 211, 0.5);
+  background-image: url("/images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 96px 258px 104px 258px;
+}
+
+.page-main article .slogan{
+  color: #FFFFFF;
+}
+
+.page-header {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.navigation a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.current-link {
+  text-decoration: underline;
+}
+
+.page-header .active-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+address a {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+address a:hover {
+  color: #756157;
+}
+
+address a:focus {
+  color: #756157;
+}
+
+address a:active {
+  color: #7561574D;
+}
+
+.logo:hover {
+  color: #756157;
+}
+
+.logo:focus {
+  color: #756157;
+}
+
+.logo:active {
+  color: #7561574D;
+}
+
+.link-item a:hover {
+  color: #68A2CA;
+}
+
+.link-item a:focus {
+  color: #68A2CA;
+}
+
+.link-item a:active {
+  color: #68A2CA4D;
+}
