@@ -6,8 +6,9 @@
     <title>Каталог гостиниц - Седона</title>
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
-      <a class="main-logo" href="index.html">
+        <a class="main-logo" href="index.html">
         <img src="images/logo.png" alt="Логотип..." width="138" height="64">
       </a>
       <nav class="navigation">
@@ -24,20 +25,20 @@
           </ul>
       </nav>
 
-      <ul class="user-menu">
-        <li class="user-menu-item">
-          <a href="#">
-            <img src="images/search.svg" alt="Поиск">
-          </a>
-        </li>
-        <li class="user-menu-item">
-          <a href="#">
-            <img src="images/heart.svg" alt="Избранное">
-          </a>
-        </li>
-      </ul>
+    <ul class="user-menu">
+      <li class="user-menu-item">
+        <a href="#">
+          <img src="images/search.svg" alt="Поиск">
+        </a>
+      </li>
+      <li class="user-menu-item">
+        <a href="#">
+          <img src="images/heart.svg" alt="Избранное">
+        </a>
+      </li>
+    </ul>
+    <button type="button" class="active-button">ХОЧУ СЮДА!</button>
 
-      <button type="button" class="active-button">ХОЧУ СЮДА!</button>
     </header>
 
     <main class="page-catalog">
@@ -45,7 +46,7 @@
 
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
-        <p class="slogan">Гостиницы Седоны</p>
+        <p>Гостиницы Седоны</p>
         <ul class="breadcrumb">
             <li><a href="index.html">
                 <img src="images/home.svg" alt="Главная" width="13" height="15">
@@ -69,21 +70,24 @@
                 <label><input type="radio" name="house" value="motel">Мотель</label>
                 <label><input type="radio" name="house" value="apartments">Апартаменты</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="price-window">
                 <legend>Стоимость, <span>₽</span></legend>
                 <label for="from-field">от</label>
                 <input type="text" id="from-field" name="from-field" value="0">
                 <label for="to-field">до</label>
                 <input type="text" id="to-field" name="to-field" value="9000">
             </fieldset>
-            <button type="submit" class="active-button secondary-button">Применить</button>
-            <button type="reset" class="active-button transparent-button">Сбросить</button>
+            <div class="button-block">
+              <button type="submit" class="active-button secondary-button">Применить</button>
+              <button type="reset" class="active-button transparent-button">Сбросить</button>
+            </div>
         </form>
       </section>
 
       <section>
         <h2 class="visually-hidden">Каталог</h2>
-        <p class="slogan">Найдено гостиниц:38</p>
+        <div class="list-option">
+          <p class="slogan">Найдено гостиниц:38</p>
         <select name="sort-order">
             <option class="list-order" value="cheap-first">Сначала дешёвые</option>
         </select>
@@ -103,48 +107,74 @@
                     <img src="images/list-view.svg" alt="Список" width="48" height="48">
                 </button>
             </li>
-        </ul>
+          </ul>
+        </div>
+
 
         <ul class="search-results">
             <li class="search-item">
                 <img src="images/hotel-1.jpg" alt="Пейзаж места" width="300" height="212">
                 <p class="slogan">Amara resort & spa</p>
-                <p>Гостиница</p>
-                <p>От 4000₽</p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="active-button secondary-button" id="Amara-button">В избранное</button>
-                <p class="star-meter">★★★★</p>
-                <p class="digit-rating">Рейтинг:8,5</p>
+                <div class="item-row">
+                  <p>Гостиница</p>
+                  <p>От 4000₽</p>
+                </div>
+                <div class="item-row">
+                  <a class="learn-more" href="#">Подробнее</a>
+                  <button type="button" class="active-button secondary-button" id="Amara-button">В избранное</button>
+                </div>
+                <div class="item-row">
+                  <p class="star-meter">★★★★</p>
+                  <p class="digit-rating">Рейтинг:8,5</p>
+                </div>
             </li>
             <li class="search-item">
-                <img src="images/hotel-2.jpg" alt="Пейзаж места" width="300" height="212">
-                <p class="slogan">Villas at Poco Diablo</p>
+              <img src="images/hotel-2.jpg" alt="Пейзаж места" width="300" height="212">
+              <p class="slogan">Villas at Poco Diablo</p>
+              <div class="item-row">
                 <p>Гостиница</p>
                 <p>От 5000₽</p>
+              </div>
+              <div class="item-row">
                 <a class="learn-more" href="#">Подробнее</a>
                 <button type="button" class="active-button chosen-button" id="Villas-button">В избранном</button>
+              </div>
+              <div class="item-row">
                 <p class="star-meter">★★★★</p>
                 <p class="digit-rating">Рейтинг:9,2</p>
+              </div>
             </li>
             <li class="search-item">
                 <img src="images/hotel-3.jpg" alt="Пейзаж места" width="300" height="212">
                 <p class="slogan">Desert Quail Inn</p>
-                <p>Гостиница</p>
-                <p>От 2500₽</p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="active-button secondary-button" id="Desert-button">В избранное</button>
-                <p class="star-meter">★★★</p>
-                <p class="digit-rating">Рейтинг:6,9</p>
+                <div class="item-row">
+                  <p>Гостиница</p>
+                  <p>От 2500₽</p>
+                </div>
+                <div class="item-row">
+                  <a class="learn-more" href="#">Подробнее</a>
+                  <button type="button" class="active-button secondary-button" id="Desert-button">В избранное</button>
+                </div>
+                <div class="item-row">
+                  <p class="star-meter">★★★</p>
+                  <p class="digit-rating">Рейтинг:6,9</p>
+                </div>
             </li>
             <li class="search-item">
                 <img src="images/hotel-4.jpg" alt="Пейзаж места" width="300" height="212">
                 <p class="slogan">GreenTree Inn</p>
-                <p>Гостиница</p>
-                <p>От 1500₽</p>
-                <a class="learn-more" href="#">Подробнее</a>
-                <button type="button" class="active-button secondary-button" id="GreenTree-button">В избранное</button>
-                <p class="star-meter">★★</p>
-                <p class="digit-rating">Рейтинг:5,0</p>
+                <div class="item-row">
+                  <p>Гостиница</p>
+                  <p>От 1500₽</p>
+                </div>
+                <div class="item-row">
+                  <a class="learn-more" href="#">Подробнее</a>
+                  <button type="button" class="active-button secondary-button" id="GreenTree-button">В избранное</button>
+                </div>
+                <div class="item-row">
+                  <p class="star-meter">★★</p>
+                  <p class="digit-rating">Рейтинг:5,0</p>
+                </div>
             </li>
         </ul>
 
@@ -218,5 +248,6 @@
         <img src="images/Logo.svg" alt="Логотип htmlacademy" width="115" height="33">
       </a>
     </footer>
+   </div>
   </body>
 </html>
