@@ -19,9 +19,15 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  width: 1280px;
   padding: 0 40px;
   color:#333333;
+  background-color: #F2F2F2;
+
+}
+
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
@@ -32,6 +38,14 @@ ul {
 
 .visually-hidden {
   display: none;
+}
+
+.page-main {
+  height: 3500px;
+}
+
+.page-catalog {
+  height: 2164px;
 }
 
 .section-main, .subscribe-window {
@@ -438,6 +452,7 @@ legend {
   display: flex;
   justify-content: space-between;
   padding: 40px 70px;
+
 }
 
 address a {
