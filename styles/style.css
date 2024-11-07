@@ -1,6 +1,6 @@
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-style: normal;
   font-weight: 700;
   font-display: swap;
@@ -19,14 +19,15 @@ html, body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  padding: 0 40px;
+  padding: 0;
+  margin: 0;
   height: 100%;
   color:#333333;
   background-color: #F2F2F2;
 }
 
 .page-container {
-  max-width: 1300px;
+  width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
   min-height: 100%;
@@ -61,8 +62,6 @@ ul {
 
 .text-block-two {
   padding: 96px 304px;
-  height: 214px;
-  gap: 54px
 }
 
 .slogan{
@@ -81,6 +80,7 @@ ul {
   background: #756157;
   color: #ffffff;
   text-transform: uppercase;
+  border: none;
 }
 
 .active-button:hover, .active-button:focus {
@@ -94,8 +94,6 @@ ul {
 
 .secondary-button {
   background: #82B3D3;
-  width: 250px;
-  height: 52px;
 }
 
 .secondary-button:hover, .secondary-button:focus {
@@ -147,9 +145,11 @@ ul {
   border: 2px solid #68A2CA;
 }
 
-.advantage-list {
+.advantage-list, .service-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .grid-block {
@@ -194,7 +194,6 @@ article {
   padding: 96px 258px 104px 258px;
   width: 1200px;
   height: 415px;
-  margin: 0 40px;
   box-sizing: border-box;
 }
 
@@ -230,8 +229,8 @@ article input {
   background-position: center;
   font-size: 18px;
   line-height: 23px;
-  padding: 50px 70px;
-  margin: 0 40px;
+  padding: 35px 70px 70px 70px;
+  margin: 0;
   gap: 10px;
 }
 
@@ -285,12 +284,19 @@ legend {
 }
 
 .breadcrumbs {
+  padding: 0;
   margin: 0;
   margin-right: auto;
 }
 
+.breadcrumbs a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
 .list-option {
-  margin: 0 40px;
+  margin: 0;
   padding: 50px 70px 0 70px;
   display: flex;
   justify-content: space-between;
@@ -311,9 +317,8 @@ legend {
 .search-results {
   font-size: 18px;
   line-height: 21px;
-  padding: 0;
-  margin: 105px;
-  margin-top: 20px;
+  padding: 50px 70px 60px;
+  margin: 0;
   gap: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -324,10 +329,11 @@ legend {
 }
 
 .search-item {
-  width: 300px;
-  height: 438px;
+  box-sizing: border-box;
   border: 1px solid #E6E6E6;
   padding: 20px;
+  gap: 16px;
+  width: 340px;
 }
 
 .item-row {
@@ -342,7 +348,7 @@ legend {
   color: #FFFFFF;
   font-weight: 700;
   text-transform: uppercase;
-  border: 2px solid #000000;
+  text-align: center;
   padding: 8px 16px;
   box-sizing: border-box;
   display: inline-block;
@@ -362,27 +368,28 @@ legend {
 
 .star-meter {
   color: #68A2CA;
-  font-size: 18px;
-  line-height: 17px;
+  font-size: 25px;
 }
 
 .digit-rating {
   background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
+  padding: 10px;
   text-align: center;
 }
 
-.filtered-page {
+.pagination {
   display: flex;
   width: 1060px;
   height: 60px;
   gap: 8px;
 }
 
-.filtered-page a{
+.pagination a{
   display: inline-block;
   text-align: center;
+  font-weight: 700;
   background-color: #82B3D3;
   color: #FFFFFF;
   width: 60px;
@@ -393,16 +400,16 @@ legend {
   padding: 12px 0;
 }
 
-.filtered-page a:hover, .filtered-page a:focus {
+.pagination a:hover, .pagination a:focus {
   background-color: #68A2CA;
 }
 
-.filtered-page a:active {
+.pagination a:active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
 }
 
-.filtered-page .current-link a{
+.pagination .current-link a{
   background-color: #F2F2F2;
   color: #333333;
 }
@@ -411,15 +418,13 @@ legend {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  padding: 0 70px;
+  height: 64px;
   color: #000000;
   display: flex;
   align-items: center;
   flex-grow: 0;
   flex-shrink: 0;
-}
-
-.main-logo {
-  margin-left: 70px;
 }
 
 .navigation a {
@@ -431,28 +436,34 @@ legend {
   padding: 20px 16px;
 }
 
+.navigation-list {
+  margin: 0;
+}
+
 .user-menu {
   margin-left: auto;
 }
 
 .user-menu a{
+  display: block;
+  width: 20px;
+  height: 20px;
   padding: 22px 12px;
-}
-
-.page-header .current-link {
-  text-decoration: underline;
 }
 
 .page-header .active-button {
   font-size: 16px;
   line-height: 20px;
-  margin-right: 70px;
+}
+
+.main-logo {
+  display: block;
 }
 
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 40px 70px;
+  align-items: center;
   flex-grow: 0;
   flex-shrink: 0;
 }
@@ -487,6 +498,11 @@ address a:active {
 
 .logo:active {
   color: #7561574D;
+}
+
+.link-item {
+  padding: 10px;
+  margin: 0;
 }
 
 .link-item a:hover {
