@@ -56,11 +56,11 @@ ul {
 }
 
 .text-block {
-  padding: 69px 0;
+  padding: 69px 200px;
 }
 
 .text-block-one {
-  padding: 64px 0;
+  padding: 64px 350px;
 }
 
 .text-block-two {
@@ -158,6 +158,8 @@ ul {
   line-height: 21px;
   width: 400px;
   height: 385px;
+  padding: 80px 85px;
+  box-sizing: border-box;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -167,6 +169,7 @@ ul {
 .img-block {
   width: 800px;
   height: 385px;
+  padding: 0;
 }
 
 .grid-block .slogan {
@@ -232,17 +235,16 @@ article input {
   line-height: 23px;
   padding: 35px 70px 70px 70px;
   margin: 0;
-  gap: 10px;
 }
 
 .filter form {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
 }
 
 .filter fieldset {
   border: none;
+  align-self: end;
   padding: 0;
   margin: 0;
 }
@@ -273,6 +275,7 @@ legend {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  margin-bottom: 30px;
 }
 
 .filter p{
@@ -320,27 +323,48 @@ legend {
   line-height: 21px;
   padding: 50px 70px 60px;
   margin: 0;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
   gap: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.search-results .slogan {
-  text-transform: capitalize;
 }
 
 .search-item {
   box-sizing: border-box;
   border: 1px solid #E6E6E6;
   padding: 20px;
-  gap: 16px;
-  width: 340px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  row-gap: 16px;
+  grid-template-areas:
+  "img img"
+  "name name"
+  "info info"
+  "link button"
+  "star digit";
 }
 
-.item-row {
+.search-item img{
+  grid-area: img;
+  grid-column: span 2;
+  object-fit:contain;
+}
+
+.search-item .slogan {
+  margin: 0;
+  grid-area:name;
+  text-transform: capitalize;
+  grid-column: span 2;
+}
+
+.house-info {
+  grid-area: info;
+  grid-column: span 2;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.house-info p{
+  margin: 0;
 }
 
 .search-item a {
@@ -357,6 +381,8 @@ legend {
   height: 36px;
   font-size: 16px;
   line-height: 20px;
+  grid-area:link;
+  justify-self: start;
 }
 
 .search-item .active-button {
@@ -365,11 +391,16 @@ legend {
   font-size: 16px;
   line-height: 20px;
   padding: 0;
+  grid-area:button;
+  justify-self: end;
 }
 
 .star-meter {
   color: #68A2CA;
   font-size: 25px;
+  margin: 0;
+  grid-area:star;
+  justify-self: start;
 }
 
 .digit-rating {
@@ -377,7 +408,10 @@ legend {
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
+  margin: 0;
   text-align: center;
+  grid-area:digit;
+  justify-self: end;
 }
 
 .pagination {
@@ -387,7 +421,7 @@ legend {
   padding: 0 0 60px 70px;
 }
 
-.pagination a{
+.pagination a, .pagination p{
   display: inline-block;
   text-align: center;
   font-weight: 700;
@@ -399,6 +433,7 @@ legend {
   line-height: 36px;
   text-decoration: none;
   padding: 12px 0;
+  margin: 0;
 }
 
 .pagination a:hover, .pagination a:focus {
@@ -412,6 +447,11 @@ legend {
 
 .pagination .current-link a{
   background-color: #F2F2F2;
+  color: #333333;
+}
+
+.pagination p{
+  background-color: #ffffff;
   color: #333333;
 }
 
@@ -466,6 +506,7 @@ legend {
 
 .main-logo {
   display: block;
+  align-self: start;
   height: 64px;
 }
 
