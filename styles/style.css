@@ -93,6 +93,7 @@ p{
   line-height: 36px;
   font-weight: 700;
   padding: 8px 50px;
+  border-radius: 4px;
   background: #756157;
   color: #ffffff;
   text-transform: uppercase;
@@ -151,7 +152,7 @@ p{
 }
 
 .display-button {
-  border: 2px solid #E5E5E5;
+  border: 2px solid #E6E6E6;
 }
 
 .display-button:hover, .display-button:active {
@@ -194,6 +195,10 @@ p{
   width: 800px;
   height: 385px;
   padding: 0;
+}
+
+.service-list .grid-block{
+  padding: 80px 85px;
 }
 
 .grid-block .slogan {
@@ -248,7 +253,7 @@ article input {
 .page-main article {
   color: #FFFFFF;
   background-color: rgba(130, 179, 211, 0.5);
-  background-image: url("/images/subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -260,9 +265,12 @@ article input {
 .filter {
   color: #FFFFFF;
   background-color: rgba(130, 179, 211, 0.5);
-  background-image: url("/images/filter.jpg");
+  background-image: url("../images/filter.jpg");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
+  box-sizing: border-box;
+  height: 412px;
   font-size: 18px;
   line-height: 23px;
   padding: 35px 70px 70px 70px;
@@ -271,6 +279,7 @@ article input {
 .filter form {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .filter fieldset {
@@ -291,12 +300,14 @@ article input {
 
 .filter label {
   display: block;
+  margin-top: 16px;
 }
 
 .button-block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: end;
+
 }
 
 .button-block .active-button {
@@ -331,6 +342,7 @@ legend {
 
 .breadcrumbs {
   margin-right: auto;
+  margin-top: 10px;
 }
 
 .breadcrumbs a {
@@ -355,6 +367,16 @@ legend {
 
 .list-order:hover, .list-order:focus {
   border: 3px solid #83B3D3;
+}
+
+.display-item .display-button {
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  padding: 14px 12px;
+  width: 48px;
+  height: 48px;
+  margin-left: 8px;
 }
 
 .search-results {
@@ -441,14 +463,21 @@ legend {
 }
 
 .star-meter {
+  display: inline-block;
+  box-sizing: border-box;
   color: #68A2CA;
-  font-size: 25px;
+  height: 37px;
+  width: 140px;
+  font-size: 21px;
+  line-height: 17px;
+  padding: 8px 0;
   grid-area:star;
   justify-self: start;
 }
 
 .digit-rating {
   background-color: #F2F2F2;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
@@ -519,7 +548,8 @@ legend {
   text-align: center;
   display: block;
   position: relative;
-  padding: 20px 16px;
+  padding: 20px 0;
+  margin: 0 16px;
 }
 
 .navigation .current-link a::after {
@@ -529,7 +559,7 @@ legend {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: #756257;
 }
 
 .user-menu {
@@ -550,6 +580,8 @@ legend {
   white-space: nowrap;
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 35px;
+  margin-left: 20px;
 }
 
 .main-logo {
