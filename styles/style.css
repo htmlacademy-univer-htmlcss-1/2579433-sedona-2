@@ -46,10 +46,6 @@ p{
   margin: 0;
 }
 
-.visually-hidden {
-  display: none;
-}
-
 .page-main, .page-catalog {
   flex-grow: 1;
 }
@@ -1044,4 +1040,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   top: 0;
   left: 0;
   transform: rotate(90deg) translate(-23px, -113px);
+}
+
+.visually-hidden {
+  display: none;
 }
