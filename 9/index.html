@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/style.css">
     <title>HTML Academy: Седона</title>
+    <script src="script.js" type="module"></script>
     <base href="https://htmlacademy-univer-htmlcss-1.github.io/2579433-sedona-2/9/">
 </head>
   <body>
@@ -176,7 +177,7 @@
 
   <div class="modal-container">
     <div class="modal modal-registration">
-      <button class="modal-close-button">
+      <button class="modal-close-button" id="modal-close">
         <span class="visually-hidden">Закрыть</span>
       </button>
       <section class="modal-content">
@@ -184,31 +185,32 @@
         <form class="registration-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="reg-inputs">
             <label for="entry-field">Дата заезда:</label>
-            <input type="date" id="entry-field" name="entry-field" min="today" value="2020-04-27">
+            <input class="date-input" type="date" id="entry-field" name="entry-field" min="today" value="2020-04-27">
+            <p class="validation-message validation-error">Мы не можем отправить вас в прошлое.</p>
           </div>
           <div class="reg-inputs">
             <label for="departure-field">Дата выезда:</label>
-            <input type="date" id="departure-field" name="departure-field" value="2023-09-01">
+            <input class="date-input" type="date" id="departure-field" name="departure-field" value="2023-09-01">
+            <p class="validation-message">На эти даты есть свободные номера. Пока есть.</p>
           </div>
           <div class="reg-inputs">
-            <div class="reg-inputs number-inputs">
-              <label for="adult-field">Взрослые:
+              <label for="adult-field">Взрослые:</label>
+              <div class="wrapper-counter">
                 <button class="number-toggle toggle-minus"></button>
+                <input type="number" id="adult-field" name="adult-field" value="2">
                 <button class="number-toggle toggle-plus"></button>
-              </label>
-              <input type="number" id="adult-field" name="adult-field" value="2">
-            </div>
-            <div class="reg-inputs number-inputs">
+              </div>
               <label for="children-field">Дети:
-                <button class="number-toggle toggle-minus"></button>
-                <button class="number-toggle toggle-plus"></button>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">i</button>
+                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </label>
-              <input type="number" id="children-field" name="children-field" value="2">
-              <span class="tooltip">
-                <button class="tooltip-toggle" type="button">i</button>
-                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </span>
-            </div>
+              <div class="wrapper-counter">
+                <button class="number-toggle toggle-minus"></button>
+                <input type="number" id="children-field" name="children-field" value="2">
+                <button class="number-toggle toggle-plus"></button>
+              </div>
           </div>
           <button class="active-button secondary-button" type="submit">Найти</button>
         </form>
